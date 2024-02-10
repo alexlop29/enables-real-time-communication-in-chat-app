@@ -4,7 +4,7 @@ import { MessageTerminal } from "../modules/message-terminal/page";
 const Alice = () => {
     return (
         <>
-            <MessageTerminal />
+            <MessageTerminal user="alice" />
         </>
     );
 };

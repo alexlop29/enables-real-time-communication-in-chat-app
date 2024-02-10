@@ -6,16 +6,16 @@ import Textarea from '@mui/joy/Textarea';
 import { api } from "../../../../convex/_generated/api";
 import { useMutation } from 'convex/react';
 
-const MessageTerminal = () => {
+const MessageTerminal = ( props: { user: string } ) => {
+    let user = props.user;
     const [text, setText] = useState("");
     const mutation = useMutation(api.tasks.createTask);
 
     const handleSubmit = async () => {
         try {
-            await mutation({ text });
+            await mutation({ text, user });
             setText("");
         } catch (error) {
-            // Handle error
             console.error("Error creating task:", error);
         }
     };
