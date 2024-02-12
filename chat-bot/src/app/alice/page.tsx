@@ -5,8 +5,14 @@ import { RecentMessages } from "../modules/recent-messages/recentMessages";
 const Alice = () => {
   return (
     <>
-      <RecentMessages />
-      <MessageTerminal user="alice" />
+      <div className="container">
+        <div className="flex flex-row">
+          <div className="basis-1/2">
+            <RecentMessages />
+            <MessageTerminal user="alice" />
+          </div>
+        </div>
+      </div>
     </>
   );
 };
