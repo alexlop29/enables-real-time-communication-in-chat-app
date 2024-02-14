@@ -26,12 +26,18 @@ export default function Home() {
             IMAGINE A PLACE...
           </StyledTitle>
         </Grid>
-        <Grid sm={12} style={{ paddingLeft: "100px", paddingRight: "100px" }}>
+        <Grid
+          sm={12}
+          style={{
+            paddingLeft: "100px",
+            paddingRight: "100px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
           <StyledSubTitle variant="subtitle1" gutterBottom>
-            ...where you can belong to a school club, a gaming group, or a
-            worldwide art community. Where just you and a handful of friends can
-            spend time together. A place that makes it easy to talk every day
-            and hang out more often.
+            ...where Alice and Bob can chat with each other.
           </StyledSubTitle>
         </Grid>
         <ButtonGrid lg={6}>
