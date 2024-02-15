@@ -16,7 +16,7 @@ const MediumHome = () => {
       sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
     >
       <Grid
-        sm={12}
+        md={12}
         style={{
           paddingTop: "150px",
           paddingLeft: "100px",
@@ -31,7 +31,7 @@ const MediumHome = () => {
         </StyledTitle>
       </Grid>
       <Grid
-        sm={12}
+        md={12}
         style={{
           paddingLeft: "100px",
           paddingRight: "100px",
@@ -44,7 +44,7 @@ const MediumHome = () => {
           ...where Alice and Bob can chat.
         </StyledSubTitle>
       </Grid>
-      <ButtonGrid lg={6}>
+      <ButtonGrid md={6}>
         <Link href="/alice" passHref>
           <StyledButton
             size="large"

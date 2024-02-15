@@ -17,12 +17,13 @@ const SmallHome = () => {
       <Grid
         sm={12}
         style={{
-          paddingTop: "150px",
+          paddingTop: "100px",
           paddingLeft: "100px",
           paddingRight: "100px",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          margin: "auto",
         }}
       >
         <StyledTitle variant="h4" gutterBottom>
@@ -37,13 +38,24 @@ const SmallHome = () => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          margin: "auto",
         }}
       >
         <StyledSubTitle variant="subtitle1" gutterBottom>
           ...where Alice and Bob can chat.
         </StyledSubTitle>
       </Grid>
-      <Grid sm={12}>
+      <Grid
+        sm={12}
+        style={{
+          paddingLeft: "100px",
+          paddingRight: "100px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "auto",
+        }}
+      >
         <Link href="/alice" passHref>
           <StyledButton
             size="large"
@@ -55,7 +67,17 @@ const SmallHome = () => {
           </StyledButton>
         </Link>
       </Grid>
-      <Grid md={12}>
+      <Grid
+        sm={12}
+        style={{
+          paddingLeft: "100px",
+          paddingRight: "100px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          margin: "auto",
+        }}
+      >
         <Link href="/bob" passHref>
           <StyledButton
             size="large"
