@@ -37,7 +37,7 @@ export default function Home() {
           }}
         >
           <StyledSubTitle variant="subtitle1" gutterBottom>
-            ...where Alice and Bob can chat with each other.
+            ...where Alice and Bob can chat.
           </StyledSubTitle>
         </Grid>
         <ButtonGrid lg={6}>

@@ -27,7 +27,6 @@ const MessageTerminal = (props: { user: string }) => {
 
   return (
     <>
-      <h1>chat bot</h1>
       <Textarea minRows={1} value={text} onChange={handleTextChange} />
       <Button onClick={handleSubmit}>Submit</Button>
     </>
