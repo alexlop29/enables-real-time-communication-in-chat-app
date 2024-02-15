@@ -11,13 +11,22 @@ const Steve = () => {
       <BackgroundGrid container>
         <Grid
           style={{
-            height: "90%",
-            width: "60%",
+            height: "80%",
             margin: "auto",
+            width: "70%",
             backgroundColor: "white",
           }}
         >
-          <Grid xs={12} lg={12} style={{ overflow: "auto", maxHeight: "90%" }}>
+          <Grid
+            xs={12}
+            lg={12}
+            style={{
+              overflow: "auto",
+              maxHeight: "90%",
+              margin: "auto",
+              width: "90%",
+            }}
+          >
             <RecentMessages />
           </Grid>
           <Grid xs={12} lg={12} style={{ width: "90%", margin: "auto" }}>

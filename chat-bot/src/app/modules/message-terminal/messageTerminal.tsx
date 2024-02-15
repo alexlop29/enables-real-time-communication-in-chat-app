@@ -11,10 +11,13 @@ const MessageTerminal = (props: { user: string }) => {
   const [text, setText] = useState("");
   const mutation = useMutation(api.tasks.createTask);
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e: any) => {
     try {
-      await mutation({ text, user });
-      setText("");
+      if (e.key === "Enter") {
+        e.preventDefault();
+        await mutation({ text, user });
+        setText("");
+      }
     } catch (error) {
       console.error("Error creating task:", error);
     }
@@ -27,8 +30,13 @@ const MessageTerminal = (props: { user: string }) => {
 
   return (
     <>
-      <Textarea minRows={1} value={text} onChange={handleTextChange} />
-      <Button onClick={handleSubmit}>Submit</Button>
+      <Textarea
+        minRows={1}
+        value={text}
+        onKeyDown={handleSubmit}
+        onChange={handleTextChange}
+        style={{ backgroundColor: "#5765f240" }}
+      />
     </>
   );
 };

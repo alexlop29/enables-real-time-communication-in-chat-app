@@ -27,7 +27,7 @@ const RecentMessages = () => {
                   <RollerSkatingRoundedIcon
                     style={{
                       color: "white",
-                      backgroundColor: "#404eed",
+                      backgroundColor: "#66bcff",
                       borderRadius: "50%",
                       padding: 8,
                       height: 40,
@@ -47,7 +47,7 @@ const RecentMessages = () => {
                   />
                 )}
               </Grid>
-              <Grid lg={4}>
+              <Grid lg={11}>
                 <Typography sx={{ fontSize: 14 }} color="black" gutterBottom>
                   {user} {new Date(_creationTime).toLocaleString("en-US")}
                 </Typography>
