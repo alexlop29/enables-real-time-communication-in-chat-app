@@ -1,6 +1,5 @@
 # edgevanta-technical-assessment
-[Vercel Dashboard](https://vercel.com/alex-lopezs-projects/edgevanta-technical-assessment)
-[Application](https://edgevanta-technical-assessment.vercel.app)
+Contains a messaging application using Next.js, Convex, and Vercel
 
 ## 🏄 Getting Started
 ```
@@ -31,3 +30,7 @@ npm run dev
 - [Convex - Mutation Documentation](https://docs.convex.dev/functions/mutation-functions#calling-mutations-from-clients)
 - [Vercel - Import Existing Project](https://vercel.com/docs/getting-started-with-vercel/import)
 - [Tailwind CSS - Next.js](https://tailwindcss.com/docs/guides/nextjs)
+
+## External Links
+- [Vercel Dashboard](https://vercel.com/alex-lopezs-projects/edgevanta-technical-assessment)
+- [Application](https://edgevanta-technical-assessment.vercel.app)
