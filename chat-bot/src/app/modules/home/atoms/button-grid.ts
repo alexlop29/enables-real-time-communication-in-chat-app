@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const ButtonGrid = styled(Grid)`
   padding-left: 100px;
   padding-right: 100px;
-  justify-content: flex-end; /* Align items to the right */
+  justify-content: flex-end;
   display: flex;
 `;
 
