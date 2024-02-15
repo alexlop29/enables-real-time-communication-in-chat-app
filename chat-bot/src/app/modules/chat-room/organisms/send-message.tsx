@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import { Button } from "@mui/base/Button";
 import Textarea from "@mui/joy/Textarea";
-import { api } from "../../../../convex/_generated/api";
+import { api } from "../../../../../convex/_generated/api";
 import { useMutation } from "convex/react";
 
-const MessageTerminal = (props: { user: string }) => {
+const SendMessage = (props: { user: string }) => {
   let user = props.user;
   const [text, setText] = useState("");
   const mutation = useMutation(api.tasks.createTask);
@@ -24,7 +23,6 @@ const MessageTerminal = (props: { user: string }) => {
   };
 
   const handleTextChange = (event: any) => {
-    // change use of any
     setText(event.target.value);
   };
 
@@ -41,4 +39,4 @@ const MessageTerminal = (props: { user: string }) => {
   );
 };
 
-export { MessageTerminal };
+export { SendMessage };

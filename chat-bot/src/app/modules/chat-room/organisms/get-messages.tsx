@@ -1,12 +1,12 @@
 "use client";
 import { useQuery } from "convex/react";
-import { api } from "../../../../convex/_generated/api";
+import { api } from "../../../../../convex/_generated/api";
 import Grid from "@mui/material/Unstable_Grid2";
 import Typography from "@mui/material/Typography";
 import BikeScooterRoundedIcon from "@mui/icons-material/BikeScooterRounded";
 import RollerSkatingRoundedIcon from "@mui/icons-material/RollerSkatingRounded";
 
-const RecentMessages = () => {
+const GetMessages = () => {
   const messages = useQuery(api.tasks.get);
 
   return (
@@ -61,4 +61,4 @@ const RecentMessages = () => {
   );
 };
 
-export { RecentMessages };
+export { GetMessages };
