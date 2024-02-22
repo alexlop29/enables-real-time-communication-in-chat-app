@@ -1,4 +1,4 @@
-# edgevanta-technical-assessment
+# Enable real time communication in a messaging application
 Contains a messaging application using Next.js, Convex, and Vercel
 
 ## 🏄 Getting Started
